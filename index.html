@@ -1,0 +1,31 @@
+
+  <!DOCTYPE html>
+  <html>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" <title>My photos</title>
+  </head>
+  <body>
+    <header>
+      <h1>My photos</h1>
+    </header>
+
+    <div class="container">
+      <div id="img_unit">
+      </div>
+    </div>
+    <script>
+      var ajax = new XMLHttpRequest();
+      //openは、phpを呼び出している
+      ajax.open('GET', 'https://h2o-com/htmlbook/images.php');
+      ajax.responseType = 'json';
+      ajax.send(null);
+    </script>
+  </body>
+
+  </html>
